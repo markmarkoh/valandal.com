@@ -65,16 +65,7 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: A-Zizzle
    ========================================================================== */
-@font-face {
-    font-family: 'sans';
-    src: url('../font/sans.eot');
-    src: url('../font/sans.eot?#iefix') format('embedded-opentype'),
-         url('../font/sans.woff') format('woff'),
-         url('../font/sans.ttf') format('truetype'),
-         url('../font/sans.svg#sans') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 @font-face {
     font-family: 'script';
@@ -87,13 +78,25 @@ td { vertical-align: top; }
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'sans';
+    src: url('../font/Aaargh-webfont.eot');
+    src: url('../font/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Aaargh-webfont.woff') format('woff'),
+         url('../font/Aaargh-webfont.ttf') format('truetype'),
+         url('../font/Aaargh-webfont.svg#AaarghNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     margin: 0;
 }
 
 a,
 a:visited {
-	color: #3DAEB6;
+	color: #ff9b95;
 	text-decoration: none;
 }
 
@@ -105,8 +108,8 @@ html.ie6 body {
 
 body {
 	font-family: 'sans', arial, helvetica, sans-serif;
-	color: #999;
-	background: transparent url(../img/bg.gif);
+	color: #777;
+	background-color: #becac8;// url(../img/bg.gif);
 }
 
 .ie6 img,
@@ -350,10 +353,10 @@ article {
 	margin-bottom: 50px;
 	padding: 30px;
 	border: 10px solid #FFF;
-	background-color: rgba(255,252,232,0.75);
-	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	background-color: rgba(255,252,232,0.85);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .ie6 article,
@@ -367,7 +370,7 @@ article h2 {
 	font-weight: normal;
 	text-align: center;
 	text-shadow: 0 1px #FFF;
-	color: #3DAEB6;
+	color: #ff9b95;
 	font-size: 30px;
 	text-transform: uppercase;
 	/*
@@ -600,7 +603,7 @@ label.ss-q-title {
 	opacity: 1;
 }
 
-/* Top Left Corner Effect */
+/* Top Left Corner Effect
 article h2:before {
 	background: transparent url(../img/bg.gif);
 	content: '';
@@ -619,7 +622,7 @@ article h2:before {
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-
+*/
 /*
 Top Corner Effect 
 header ul li.active a:after,
@@ -771,6 +774,7 @@ header ul li.active a span:before {
 		width: auto;
 		margin: 0 2%;
 		padding-bottom: 200px;
+		padding-top: 50px;
 	}
 	#header {
 		width: 100%;
